@@ -10,7 +10,7 @@ function startTimer(input){
         let endYear = endTime.year; 
         let endMon = endTime.month-1; 
         let endDate = endTime.date; 
-        let endHr = endTime.hr? endTime.hr:0; 
+        let endHr = endTime.hour? endTime.hr:0; 
         let endMin = endTime.min? endTime.min:0; 
         let endSec = endTime.sec? endTime.sec:0;
     
