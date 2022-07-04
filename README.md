@@ -8,11 +8,14 @@ Select the container to put timer in.
 `endTime {Object}`
 
 The timer will count down to this endTime.
-`hour`, `min`, `sec` is option.
+`hour`, `min`, `sec` is optional.
+
 Default : 0
 
 `showEndTime {Boolean}`
+
 Allow end time show up.
+
 Default : false
 
 ```
@@ -49,3 +52,4 @@ startTimer({
 })
 ```
 
+![example3](doc/img/example_03.png)
