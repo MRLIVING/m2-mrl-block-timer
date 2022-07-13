@@ -30,13 +30,13 @@ function startTimer(input){
             let endTimeText = `<p>距離${endYear}年${endMon+1}月${endDate}日 ${endHr}點${endMin}分${endSec}秒 還有</p>`
             let resultElement = '';
             if(offsetTime<=0){
-                resultElement = getResultHTML(showText,isShowSec,0,0,0,0);
+                resultElement = getResultHTML(showText,isShowSec,'00','00','00','00');
                 window.clearInterval(mrlTimer);
             }else{
                 let sec ,min, hr, day;
-                sec = parseInt(offsetTime % 60);
-                min = parseInt((offsetTime / 60) % 60);
-                hr = parseInt((offsetTime / 60 / 60)% 24);
+                sec = parseInt(offsetTime % 60).toString().padStart(2,'0');
+                min = parseInt((offsetTime / 60) % 60).toString().padStart(2,'0');
+                hr = parseInt((offsetTime / 60 / 60)% 24).toString().padStart(2,'0');
                 day = parseInt(offsetTime / 60 / 60 /24);
                 resultElement = getResultHTML(showText,isShowSec,day,hr,min,sec);
             }
