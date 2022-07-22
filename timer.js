@@ -37,7 +37,7 @@ function startTimer(input){
                 min = parseInt((offsetTime / 60) % 60);
                 hr = parseInt((offsetTime / 60 / 60)% 24);
                 day = parseInt(offsetTime / 60 / 60 /24);
-                if(day<=3){
+                if(day<3){
                     hr = hr + day * 24;
                     day = 0;
                     isShowSec = true;
