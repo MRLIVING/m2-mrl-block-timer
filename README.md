@@ -39,7 +39,19 @@ Allow text (like: 天、十、分、秒) show up.
 
 Default : false
 
+`extendEndTime {Object}`
 
+If there any extend end time to count down after end time.
+```
+{
+    year:2022,
+    month:7,
+    date:5,
+    hour:18,
+    min:0,
+    sec:0
+}
+```
 
 ## example
 
